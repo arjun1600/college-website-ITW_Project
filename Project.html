@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IIIT Kottayam.com</title>
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+
+            .hidden {
+            display: none;
+            }
+            table{
+                border-radius: 30px;
+                border: 20px solid rgb(9, 61, 190);
+                background-color: rgb(7, 3, 110);
+            }
+            body{
+                background-color: black;
+                margin-top: 0px;
+                margin-left: 0px;
+            }
+            nav {
+            position:fixed;
+            background: #074de6;
+            height: 50px;
+            width: 100%;
+            }
+
+            .menu-icon {
+            display: none;
+            color: #fff;
+            font-size: 25px;
+            padding: 12px;
+            cursor: pointer;
+            }
+
+            .logo {
+            float: left;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            }
+
+            .menu {
+            float: right;
+            }
+
+            .menu ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            height: 50px;
+            }
+
+            .menu li {
+            display: inline-block;
+            float: left;
+            }
+
+            .menu li a {
+            display: block;
+            padding: 0 10px;
+            line-height: 50px;
+            color: #fff;
+            text-decoration: none;
+            }
+
+            @media only screen and (max-width: 768px) {
+            .menu-icon {
+                display: block;
+            }
+            .menu {
+                position: fixed;
+                z-index: 1000;
+                top: 50px;
+                left: 0;
+                width: 100%;
+                height: 0;
+                overflow: hidden;
+                background: #0e95f5;
+                transition: height 0.3s ease;
+            }
+            .menu.active {
+                height: 200px;
+            }
+            .menu ul {
+                display: block;
+                height: auto;
+            }
+            .menu li {
+                display: block;
+                float: none;
+                width: 100%;
+            }
+            .menu li a {
+                display: block;
+                padding: 10px;
+                border-bottom: 1px solid #fff;
+            }
+            }
+            td,th{
+                color: azure; 
+                font-size: large;
+            }
+            div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+            }
+
+            div.gallery:hover {
+            border: 1px solid #777;
+            }
+
+            div.gallery img {
+            width: 100%;
+            height: auto;
+            }
+
+            div.desc {
+            padding: 15px;
+            text-align: center;
+            }
+            td{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            
+    </style>
+    <script>
+
+        const menuIcon = document.querySelector(".menu-icon");
+        const menu = document.querySelector(".menu");
+        menuIcon.addEventListener("click", () => {
+        menu.classList.toggle("active");
+        });
+        function aboutmo(){
+            document.getElementById("about").style.backgroundColor ="maroon";
+        }
+        function aboutmot(){
+            document.getElementById("about").style.backgroundColor ="rgb(7, 3, 110)";
+        }
+        function campusmo(){
+            document.getElementById("campus").style.backgroundColor ="maroon";
+        }
+        function campusmot(){
+            document.getElementById("campus").style.backgroundColor ="rgb(7, 3, 110)";
+        }
+        function coursesmo(){
+            document.getElementById("courses").style.backgroundColor ="maroon";
+        }
+        function coursesmot(){
+            document.getElementById("courses").style.backgroundColor ="rgb(7, 3, 110)";
+        }
+        function admissionmo(){
+            document.getElementById("admissions").style.backgroundColor ="maroon";
+        }
+        function admissionmot(){
+            document.getElementById("admissions").style.backgroundColor ="rgb(7, 3, 110)";
+        }
+        function placementsmo(){
+            document.getElementById("placements").style.backgroundColor ="maroon";
+        }
+        function placementsmot(){
+            document.getElementById("placements").style.backgroundColor ="rgb(7, 3, 110)";
+        }
+        function gallerymo(){
+            document.getElementById("gallery").style.backgroundColor ="maroon";
+        }
+        function gallerymot(){
+            document.getElementById("gallery").style.backgroundColor ="rgb(7, 3, 110)";
+        }
+        function contactusmo(){
+            document.getElementById("contactus").style.backgroundColor ="maroon";
+        }
+        function contactusmot(){
+            document.getElementById("contactus").style.backgroundColor ="rgb(7, 3, 110)";
+        }
+        function myFunction(){
+            alert("Your details have been submitted.")
+        }
+
+
+
+    </script>
+    </head>
+    <body>
+        <nav>
+            <div class="menu-icon">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="logo">
+                <a style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: #fff;font-size: 72;">Indian Institute of Information Technology, Kottayam</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#campus">Campus</a></li>\
+                    <li><a href="#courses">Courses Provided</a></li>
+                    <li><a href="#admissions">Admissions</a></li>
+                    <li><a href="#placements">Placements</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contactus">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        
+        <table id="about" style="width: 100%;" onmouseover="aboutmo()" onmouseout="aboutmot()">
+            <colgroup>
+                <col span="1" style="width: 5%;">
+                <col span="1" style="width: 60%;">
+                <col span="1" style="width: 5%;">
+                <col span="1" style="width: 30%;">
+            </colgroup>
+            <tr>
+                <td></td>
+                <br>
+                <br>
+                <br>
+                <td>
+                    <p style="font-family: Arial, Helvetica, sans-serif; color: azure;font-size: xx-large;"><u><b>About</b></p></u>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td ><p align="justify">
+                    
+                    Indian Institute of Information Technology (IIIT),Kottayam is a premier institute of higher education in the field of Information Technology located in Kottayam, Kerala, India. It was established in the year 2015 under the mentorship of National Institute of Technology,Calicut (which later changed to IISER, Thiruvananthpuram in 2016) and is one of the 20 IIITs established under the Public-Private Partnership (PPP) model by the Ministry of Education, Government of India.<br>
+                    The institute offers undergraduate and postgraduate degree programs in various branches of Information Technology such as Computer Science and Engineering, Electronics and Communication Engineering, and Computational Data Science. The curriculum is designed to provide students with a strong foundation in the principles and practices of information technology, as well as opportunities to engage in cutting-edge research and development. 
+                </p>
+                </td>
+                <td></td>
+                <td>
+                    <figure>
+                        
+                        <img src="logo.jpeg" alt text="IIIT Kottayam Logo" height="180px">
+                        <figcaption style="color: azure; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">      IIIT Kottayam Logo </figcaption>                
+                    </figure>
+                </td>
+            </tr>
+            </table>
+            <br>
+            <table id="campus" style="width: 100%;" onmouseover="campusmo()" onmouseout="campusmot()">
+                <colgroup>
+                    <col span="1" style="width: 5%;">
+                    <col span="1" style="width: 60%;">
+                    <col span="1" style="width: 5%;">
+                    <col span="1" style="width: 30%;">
+                </colgroup>
+            <tr>
+                <td></td>
+                <td>
+                    <p style="font-family: Arial, Helvetica, sans-serif; color: azure;font-size: xx-large;"><b><u>Campus</u></b></p>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="color: azure; font-size: large;"><p align="justify">
+                    
+                    The campus of Indian Institute of Information Technology (IIIT) Kottayam is located in Valavoor village in Pala, Kottayam, Kerala. Spread over an area of 53 acres, the campus is set amidst lush green surroundings, providing a peaceful and conducive environment for learning and research.<br>
+                    The campus is well-equipped with modern infrastructure and facilities to cater to the needs of students and faculty. The academic block houses classrooms, tutorial rooms, laboratories, and research centers equipped with state-of-the-art technology. The library is well-stocked with books, journals, and e-resources to support research and academic activities.<br>
+                    The institute also provides hostel facilities for both boys and girls, with well-furnished rooms, Wi-Fi connectivity, and recreational facilities. The hostels have round-the-clock security for the well-being of the students.<br>
+                    <em><b><u>Our Campus Address:</u></b></em><br>
+                    Indian Institute of Information Technology Kottayam <br>
+                    Valavoor.P.O, Pala<br>
+                    Kottayam-686635<br>
+                    Kerala, India<br>
+                </p>
+                </td>
+                <td></td>
+                <td>
+                    <figure>
+                        
+                        <img src="fullcollege.jpeg" alt text="Birds eye view of college" height="180px">
+                        <figcaption style="color: azure; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Birds Eye View of the College</figcaption>                
+                    </figure>
+                </td>
+            </tr>
+            </table>
+            <br>
+            <table id="courses" style="width: 100%;" onmouseover="coursesmo()" onmouseout="coursesmot()">
+                <colgroup>
+                    <col span="1" style="width: 5%;">
+                    <col span="1" style="width: 60%;">
+                    <col span="1" style="width: 5%;">
+                    <col span="1" style="width: 30%;">
+                </colgroup>
+            <tr>
+                <td></td>
+                <td>
+                        <p style="font-family: Arial, Helvetica, sans-serif; color: azure;font-size: xx-large;"><b><u>Courses Provided</u></b></p>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="color: azure; font-size: large;">
+                    IIIT Kottayam provides admission in following courses:
+                    <ol type="I">
+                        <li><u>Under Graduate Programmes</u></li>
+                        <ul>
+                            <li>B.Tech in Computer Science and Engineering (CSE)</li>
+                            <li>B.Tech in Electronics and Communication Engineering (ECE)</li>
+                            <li>B.Tech in Computer Science with specialisation in Cyber Security</li>
+                            <li>B.Tech in Computer Science with specialisation in AI & Data Science</li>
+                        </ul>
+                        <br>
+                        <li><u>Post Graduate Programmes (For Working Professionals)</u></li>
+                        <ul>
+                            <li>M.Tech in Artificial Intelligence and Data Science</li>
+                            <li>M.Tech in Cyber Security</li>
+                            <li>M.Tech in CSE with specialization in FinTech</li>
+                            <li>M.Tech. in CSE with specialization in Big Data and Machine Learning</li>
+                        </ul>
+                        <br>
+                        <li><u>Doctoral Programmes</u></li>
+                        <ul>
+                            <li>Computer Science and Engineering(CSE)</li>
+                            <li>Electronics and Communication Engineering(ECE)</li>
+                            <li>Mathematics</li>
+                        </ul>
+                        <br>
+                    </ol>
+
+                </td>
+                <td></td>
+                <td>
+                    <figure>
+                        
+                        <img src="classroom.jpeg" alt text="Classroom in IIIT Kottayam" height="180px">
+                        <figcaption style="color: azure; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Classroom in IIIT Kottayam</figcaption>
+                              
+                    </figure>
+                </td>
+            </tr>
+        </table>
+
+        <table id="admissions" onmouseover="admissionmo()" onmouseout="admissionmot()">
+            <colgroup>
+                <col span="1" style="width: 5%;">
+                <col span="1" style="width: 10%;">
+                <col span="1" style="width: 45%;">
+                <col span="1" style="width: 25%;">
+                <col span="1" style="width: 15%;">
+            </colgroup>
+            <tr>
+                <td></td>
+                <td colspan="2"><p style="font-family: Arial, Helvetica, sans-serif; color: azure;font-size: xx-large;"><b><u>Admission</u></b></p></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td colspan="2">The students are admitted into the institute through the Joint Entrance Examination Mains (JEE Mains) Results.The seats are alloted through JoSSA , CSAB and DASA Counselling processes.The seat Cut-Offs for General Category (through JoSSA) is given below:</td>
+            </tr>
+            <tr><td></td></tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <th>Branch</th>
+                <td>Cutoff Rank (year-2022)</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>B.Tech in Computer Science and Engineering </td>
+                <td>30288</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>B.Tech in Electronics and Communication Engineering</td>
+                <td>35335</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>B.Tech in Computer Science with specialisation in Cyber Security</td>
+                <td>31965</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>B.Tech in Computer Science with specialisation in AI & Data Science</td>
+                <td>30722</td>
+            </tr>
+            <tr><td></td></tr>
+            <br>
+        </table>
+        <br>
+   
+        <table id="placements" onmouseover="placementsmo()" onmouseout="placementsmot()">
+            <colgroup>
+                <col span="1" style="width: 5%;">
+                <col span="1" style="width: 10%;">
+                <col span="1" style="width: 45%;">
+                <col span="1" style="width: 25%;">
+                <col span="1" style="width: 15%;">
+            </colgroup>
+            <tr>
+                <td></td>
+                <td colspan="2"><p style="font-family: Arial, Helvetica, sans-serif; color: azure;font-size: xx-large;"><b><u>Placements</u></b></p></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td colspan="2">Indian Institute of Information Technology (IIIT) Kottayam has an active and dedicated placement cell that facilitates the placement process for its students. The placement cell works towards providing ample opportunities to students for internships and final placements.The placement statistics for the current academic session (2022-23) is given below:</td>
+            </tr>
+            <tr><td></td></tr>
+            <tr>
+                <td></td>
+                <td></td>
+                
+                <th>Highest CTC:</th>
+                <th>58.90 LPA</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <th>Average CTC :</th>
+                <th>13.90 LPA</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <th>Indiviual Placements :</th>
+                <th>74/82</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <th>No. of Offers :</th>
+                <th>120</th>
+            </tr>
+            
+        </table>
+        <br>
+        <table id="gallery" onmouseover="gallerymo()" onmouseout="gallerymot()">
+            <colgroup>
+                <col span="1" style="width: 5%;">
+                <col span="1" style="width: 10%;">
+                <col span="1" style="width: 20%;">
+                <col span="1" style="width: 20%;">
+                <col span="1" style="width: 20%;">
+                <col span="1" style="width: 20%;">
+                <col span="1" style="width: 5%;">
+            </colgroup>
+            <tr>
+                <td></td>
+                <td colspan="6"><p style="font-family: Arial, Helvetica, sans-serif; color: azure;font-size: xx-large;"><b><u><em>Gallery</em></b></u></b></p></td>
+              
+            </tr>
+            <tr>
+            
+                <td></td>
+                <td>
+            <div class="gallery">
+                <a target="_blank" href="fullcollege.jpeg">
+                  <img src="fullcollege.jpeg" alt="Birds Eye View of IIIT Kottayam" width="600" height="400">
+                </a>
+                <div class="desc">Birds Eye View of IIIT Kottayam</div>
+              </div>
+                </td>
+                <td>
+              <div class="gallery">
+                <a target="_blank" href="rainbow iiit kottayam.jpg">
+                  <img src="rainbow iiit kottayam.jpg" alt="Rainbow seen from IIIT Kottayam" width="600" height="400">
+                </a>
+                <div class="desc">Rainbow seen from IIIT Kottayam</div>
+              </div>
+            </td>
+
+            <td>
+              <div class="gallery">
+                <a target="_blank" href="hostel-manimala1.jpeg">
+                  <img src="hostel-manimala1.jpeg" alt="Manimala Hostel" width="600" height="400">
+                </a>
+                <div class="desc">Manimala Hostel</div>
+              </div>
+            </td>
+            
+                <td>
+              <div class="gallery">
+                <a target="_blank" href="sunrise.jpg">
+                  <img src="sunrise.jpg" alt="Sunrise from IIIT Kottayam" width="600" height="400">
+                </a>
+                <div class="desc">Sunrise from IIIT Kottayam</div>
+              </div> 
+              </td>
+              <td>
+              <div class="gallery">
+                <a target="_blank" href="oat.jpg">
+                  <img src="oat.jpg" alt="Open Air Theater at IIIT Kottayam" width="600" height="400">
+                </a>
+                <div class="desc">Open Air Theater at IIIT Kottayam</div>
+              </div> 
+              </td>
+            </tr>
+        </table>  
+        <br>
+        <table id="contactus" onmouseover="contactusmo()" onmouseout="contactusmot()">
+            <colgroup>
+                <col span="1" style="width: 5%;">
+                <col span="1" style="width: 10%;">
+                <col span="1" style="width: 85%;">
+            </colgroup>
+            <tr>
+            <td></td>
+            <td colspan="2"><p style="font-family: Arial, Helvetica, sans-serif; color: azure;font-size: xx-large;"><b><u>Contact Us</u></b></p></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>If you wish to contact Indian Institute of Information Technology (IIIT) Kottayam for any queries, feedback, or information, you can do so by visiting the institute's official website. <br>
+                Official Website :<a href="www.https://www.iiitkottayam.ac.in" style="color: rgb(74, 186, 224);">Click Here</a><br>
+                Social Media Handles:<br>
+                Facebook:<a href="https://www.facebook.com/iiitkottayamofficial/" style="color: rgb(74,186,224);">Click here to go to Facebook Profile</a><br>
+                LinkedIn:<a href="https://in.linkedin.com/school/indian-institute-of-information-technology-kottayam/" style="color: rgb(74,186,224);">Click here to go to LinkedIn Profile</a><br>
+                Twitter:<a href="https://twitter.com/iiitkkottayam" style="color: rgb(74,186,224);">Click here to go to Twitter Account</a><br>
+                You can also contact us by filling this form, we will reach out to you soon,<br>
+                <fieldset>
+                    <legend>Enter your information here:</legend>
+                <form id="my-form" onsubmit="myFunction()">
+                  <label for="name">Name:</label><br>
+                  <input type="text" id="name" name="name" required><br>
+                  
+                  <label for="phone">Phone Number:</label><br>
+                  <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br>
+                  
+                  <label for="email">Email Address:</label><br>
+                  <input type="email" id="email" name="email" required><br>
+                  
+                  <button type="submit">Submit</button>
+                  
+                </form>
+                          
+                </fieldset>
+                <br>
+                <br>
+            </td>
+            </tr>
+        </table>
+        <br>
+         
+    </body>
+</html>
